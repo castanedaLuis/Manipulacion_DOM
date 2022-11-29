@@ -1,0 +1,41 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px !important;
+    border-radius: 20px;
+    width: 210px;
+    height: 44px;
+    margin: auto;
+}
+.github:hover{
+    transition: all 1s ease;
+    background-color: #001E50;
+    color: white;
+}
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card{
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.card:hover{
+    transition: all 1s ease;
+    background-color: rgb(203, 203, 203);
+    color: black;
+    z-index: 50;
+}
+.card:hover .price{
+    transition: color 2s ease;
+    color: red;
+}
